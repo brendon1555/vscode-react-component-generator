@@ -1,8 +1,25 @@
 {
 	"name": "react-component-generator",
 	"displayName": "React Component Generator",
-	"description": "",
+	"description": "Quickly create React Component boilerplate with storybook and tests",
+	"publisher": "brendon1555",
+	"author": {
+		"name": "Brendon Lees",
+		"url": "https://github.com/brendon1555"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/brendon1555/vscode-react-component-generator.git"
+	},
+	"keywords": [
+		"boilerplate",
+		"component",
+		"generate",
+		"react",
+		"reactjs"
+	],
 	"version": "0.0.1",
+	"license": "MIT",
 	"engines": {
 		"vscode": "^1.53.0"
 	},
