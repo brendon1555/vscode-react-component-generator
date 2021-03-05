@@ -1,5 +1,6 @@
 {
 	"name": "react-component-generator",
+	"preview": true,
 	"displayName": "React Component Generator",
 	"description": "Quickly create React Component boilerplate with storybook and tests",
 	"icon": "icon.png",
