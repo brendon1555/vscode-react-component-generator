@@ -2,6 +2,7 @@
 	"name": "react-component-generator",
 	"displayName": "React Component Generator",
 	"description": "Quickly create React Component boilerplate with storybook and tests",
+	"icon": "icon.png",
 	"publisher": "brendon1555",
 	"author": {
 		"name": "Brendon Lees",

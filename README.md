@@ -1,70 +1,47 @@
-# react-component-generator README
+# VS Code React Component Generator
 
-This is the README for your extension "react-component-generator". After writing up a brief description, we recommend including the following sections.
+[![Version](https://vsmarketplacebadge.apphb.com/version-short/brendon1555.react-component-generator.svg)](https://marketplace.visualstudio.com/items?itemName=brendon1555.react-component-generator)
+[![Install](https://vsmarketplacebadge.apphb.com/installs-short/brendon1555.react-component-generator.svg)](https://marketplace.visualstudio.com/items?itemName=brendon1555.react-component-generator)
+[![Ratings](https://vsmarketplacebadge.apphb.com/rating-short/brendon1555.react-component-generator.svg)](https://marketplace.visualstudio.com/items?itemName=brendon1555.react-component-generator)
 
-## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## Installation
 
-For example if there is an image subfolder under your extension project workspace:
+### Visual Studio Marketplace
 
-\!\[feature X\]\(images/feature-x.png\)
+Launch _Quick Open_:
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+- [_Linux_](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf): `Ctrl+P`
+- [_macOS_](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf): `⌘+P`
+- [_Windows_](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf): `Ctrl+P`
 
-## Requirements
+Paste the following command and press `Enter`:
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+```shell
+ext install dsznajder.es7-react-js-snippets
+```
 
-## Extension Settings
+## Usage
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+### From Explorer
 
-For example:
+- Right click the folder in the sidebar where you want to create a component.
+- Select `Create Component`.
+- Select whether to use Typescript, and include Storybook or Tests.
+- Enter a name for the Component.
+- A Component will be created in a directory named after your input.
 
-This extension contributes the following settings:
+### From Command Palette
 
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+- Open the command palette and type `Generate Component`, press `Enter`.
+- Select whether to use Typescript, and include Storybook or Tests.
+- Enter a name for the Component.
+- A Component will be created in a directory named after your input.
 
-## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+## Configuration
 
-## Release Notes
+You can access to the extension's settings through VSCode settings. You can customize:
 
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+### `reactComponentGenerator.componentsPath` (default: `""`)
+Path relative to the workspace root to place components when not using the Explorer.

@@ -71,7 +71,7 @@ const execute = (args: any) => {
 			if (typeof componentName === "string") {
 				const componentFolder = path.join(fsPath, componentName);
 				try {
-					fs.mkdirSync(componentFolder);
+					fs.mkdirSync(componentFolder, {recursive: true});
 					buildReactTemplate(selectedFeatures, componentName, componentFolder);
 				}
 				catch (error) {
