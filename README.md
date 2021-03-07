@@ -18,7 +18,7 @@ Launch _Quick Open_:
 Paste the following command and press `Enter`:
 
 ```shell
-ext install dsznajder.es7-react-js-snippets
+ext install brendon1555.react-component-generator
 ```
 
 ## Usage
